@@ -7,9 +7,12 @@ __autor__ = 'Ruslan Bikmetov'
 Для решения используйте цикл while и арифметические операции.
 """
 
-number = input("Введите число: ")
-x = 0
-for i in number:
-    while int(i) > x:
-        x = int(i)
-print(x)
+number = int(input("Введите число: "))
+count = 0
+maximum = 0
+while number > 0:
+    count = number % 10
+    number = number // 10
+    if count > maximum:
+        maximum = count
+print(maximum)
