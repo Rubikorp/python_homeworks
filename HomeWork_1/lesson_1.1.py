@@ -8,4 +8,4 @@ __autor__ = 'Ruslan Bikmetov'
 
 string = input("Введите слово: ")
 count = int(input("Введите число: "))
-print(string, ", ", count)
+print(f'{string}, {count}')
