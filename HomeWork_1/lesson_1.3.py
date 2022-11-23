@@ -6,5 +6,5 @@ __autor__ = 'Ruslan Bikmetov'
 """
 
 n = int(input("Введите число n: "))
-sum = n + n*11 + n*111
+sum = n + n * 11 + n * 111
 print(sum)

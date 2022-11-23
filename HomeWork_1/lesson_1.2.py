@@ -12,4 +12,3 @@ second = second % 60
 hours = minuts // 60
 minuts = minuts % 60
 print(f'{hours}:{minuts}:{second}')
-
