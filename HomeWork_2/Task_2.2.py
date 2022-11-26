@@ -11,7 +11,7 @@ __autor__ = 'Ruslan Bikmetov'
 index = 0
 element = input(f"Введите элемент {index}:")
 array = []
-while element != "end":
+while element != "end":  # Закрыть ввод
     array.append(element)
     index += 1
     element = input(f"Введите элемент {index}:")
@@ -21,9 +21,9 @@ print(array)
 
 def sort_array(arr):
     length = len(arr)
+    ind = 0
     if length % 2 != 0:
         length -= 1
-    ind = 0
     while length > ind:
         x = arr[ind]
         arr[ind] = arr[ind + 1]
