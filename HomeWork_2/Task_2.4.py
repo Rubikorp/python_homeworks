@@ -12,7 +12,5 @@ lis = words.split()
 print(lis)
 
 for i in lis:
-    if len(i) > 10:
-        print(i[:10])
-    else:
-        print(i)
+    print(i[:10]) if len(i) > 10 else print(i)
+
