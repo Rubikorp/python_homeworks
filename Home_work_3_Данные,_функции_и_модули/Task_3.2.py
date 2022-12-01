@@ -8,9 +8,20 @@
 '''
 
 
-def print_user(*args):
-    for i in args:
-        print(i, end=' ')
+def print_user(
+        first_name_user,
+        last_name_user,
+        birth_user,
+        city_user,
+        email_user,
+        phone_number_user):
+    print(f''
+          f'{first_name_user} '
+          f'{last_name_user}, '
+          f'{birth_user}, '
+          f'{city_user}, '
+          f'{email_user}, '
+          f'{phone_number_user}')
 
 
 first_name = input('Введите имя: ')
