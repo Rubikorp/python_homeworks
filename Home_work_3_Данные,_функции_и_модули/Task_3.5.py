@@ -11,7 +11,7 @@
 '''
 
 
-summa = 0
+sum_numbers = 0
 check_spec_symbol = False
 while not check_spec_symbol:
     numbers = input('Введите числа через пробел: ')
@@ -21,7 +21,7 @@ while not check_spec_symbol:
             check_spec_symbol = True
             break
         else:
-            summa += int(i)
+            sum_numbers += int(i)
 
 
-print(summa)
+print(sum_numbers)
