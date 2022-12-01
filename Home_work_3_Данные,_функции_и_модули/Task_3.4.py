@@ -8,10 +8,19 @@
 
 
 def my_func(x, y):
-    print(x ** y)
+    count = 1
+    rez = x
+    while count < y:
+        rez = rez * x
+        count += 1
+    if y > 0:
+        return rez
+    elif y < 0:
+        rez = 1 / rez
+        return rez
 
 
 arg_1 = int(input('Введите число: '))
 arg_2 = int(input('Введите степень: '))
 
-my_func(arg_1, arg_2)
+print(my_func(arg_1, arg_2))
