@@ -7,10 +7,9 @@ __autor__ = 'Ruslan Bikmetov'
  Если в слово длинное, выводить только первые 10 букв в слове.
 """
 
-words = input("Введите строку: ")
-lis = words.split()
-print(lis)
+words = input("Введите строку: ").split()
+print(words)
 
-for i in lis:
+for i in words:
     print(i[:10]) if len(i) > 10 else print(i)
 
