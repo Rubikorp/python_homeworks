@@ -37,13 +37,18 @@ __autor__ = 'Ruslan Bikmetov'
 arr = [1, 2, 3, 4, 5, 6]
 
 
-def sort_array(arr):
-    length = len(arr)
-    ind = 0
-    if length % 2 != 0:
-        length -= 1
-    while length > ind:
-        x = arr[ind]
-        arr[ind] = arr[ind + 1]
-        arr[ind + 1] = x
-        ind += 2
+def sort_array(array):
+    try:
+        for ind, value in enumerate(array, 0):
+            x = ind + 1
+            if x % 2 == 0:
+                continue
+            else:
+                array[ind] = array[ind + 1]
+                array[ind + 1] = value
+        return array
+    except IndexError:
+        return array
+
+
+print(sort_array(arr))
