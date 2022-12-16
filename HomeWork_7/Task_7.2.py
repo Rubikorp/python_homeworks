@@ -11,3 +11,18 @@ width (ширина). Значения данных атрибутов долж�
 толщиной в 1 см*число см толщины полотна. Проверить работу метода.
 Например: 20м*5000м*25кг*5см = 12500 т
 '''
+
+
+class Road:
+    def __init__(self, length, width):
+        self._length = length
+        self._width = width
+
+    def print_weight_road(self):
+        weight = int((self._length * self._width * 25 * 5) / 1000)
+        print(f'{weight} т')
+
+
+obj = Road(20, 5000)
+obj.print_weight_road()
+
