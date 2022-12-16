@@ -11,3 +11,26 @@
  порядке (красный, желтый, зеленый).
  Проверить работу примера, создав экземпляр и вызвав описанный метод.
 '''
+import time
+
+
+class TrafficLight:
+    def __init__(self):
+        self.__color = ['red', 'yellow', 'green']
+
+    def running(self):
+        for i in self.__color:
+            print(i)
+            if i == 'red':
+                time.sleep(7)
+            elif i == 'yellow':
+                time.sleep(2)
+            else:
+                time.sleep(5)
+
+
+obj = TrafficLight()
+n = 0
+while n != 4:
+    obj.running()
+    n += 1
