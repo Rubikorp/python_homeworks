@@ -27,3 +27,6 @@ def append_ratting():
     number = 3
     my_list.append(number)
     my_list.sort(reverse=True)
+    return my_list
+
+print(append_ratting())
