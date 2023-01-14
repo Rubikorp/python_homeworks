@@ -43,3 +43,4 @@ try:
         print(CONTENT)
 except:
     encoding_convert()
+    print("Файл перекодирован в utf-8")
